@@ -140,22 +140,22 @@ typedef enum DEBOUNCE_STATE
 #define TEMPERATURE_ROOM 50
 #define TEMPERATURE_SOAK_MIN 90
 #define TEMPERATURE_SOAK_MAX 138
-#define TEMPERATURE_REFLOW_MAX 150
+#define TEMPERATURE_REFLOW_MAX 155
 #define TEMPERATURE_COOL_MIN 90
 #define SENSOR_SAMPLING_TIME 1000
-#define SOAK_TEMPERATURE_STEP 4 
+#define SOAK_TEMPERATURE_STEP 3
 #define SOAK_MICRO_PERIOD 9000
 #define DEBOUNCE_PERIOD_MIN 100
 
 // ***** PID PARAMETERS *****   Change this constants for the PID multiplication
 // ***** PRE-HEAT STAGE *****
 #define PID_KP_PREHEAT 100      // Present error constant
-#define PID_KI_PREHEAT 0.0001   // Integral (past) error constant
-#define PID_KD_PREHEAT 5000     // Derivative (future) constant 
+#define PID_KI_PREHEAT 0.0005   // Integral (past) erBror constant
+#define PID_KD_PREHEAT 4000     // Derivative (future) constant 
 // ***** SOAKING STAGE *****
 #define PID_KP_SOAK 400 
 #define PID_KI_SOAK 0.01 
-#define PID_KD_SOAK 8000 
+#define PID_KD_SOAK 6000 
 // ***** REFLOW STAGE *****
 #define PID_KP_REFLOW 400 
 #define PID_KI_REFLOW 0.0001
